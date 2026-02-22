@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="page-header">
+    <h1>My Tasks</h1>
+    <a href="{% url 'task_create' %}" class="btn btn-primary">+ New Task</a>
+</div>
+
+<div class="search-filter-bar">
+    <form class="search-form" method="get">
+        <input type="text" name="search" placeholder="Search tasks..." class="search-input" value="{{ search_query }}">
+        <button type="submit" class="btn-search">Search</button>
+    </form>
+
+    <div class="filter-tabs">
+        <a href="?status=all&search={{ search_query }}"
+            class="filter-tab {% if status_filter == 'all' %}active{% endif %}">All</a>
+        <a href="?status=pending&search={{ search_query }}"
+            class="filter-tab {% if status_filter == 'pending' %}active{% endif %}">Pending</a>
+        <a href="?status=completed&search={{ search_query }}"
+            class="filter-tab {% if status_filter == 'completed' %}active{% endif %}">Completed</a>
+    </div>
+</div>
+
+<div class="task-grid">
+    {% for task in tasks %}
+    <div class="task-card {% if task.completed %}completed{% endif %}">
+        <div class="task-info">
+            <div class="task-title">{{ task.title }}</div>
+            {% if task.description %}
+            <div class="task-desc">{{ task.description|truncatewords:15 }}</div>
+            {% endif %}
+            <div class="task-meta">Created on {{ task.created_at|date:"M d, Y" }}</div>
+        </div>
+        <div class="task-actions">
+            <a href="{% url 'task_toggle' task.pk %}" class="btn btn-toggle" title="Toggle Completion">
+                {% if task.completed %}Mark Pending{% else %}Mark Complete{% endif %}
+            </a>
+            <a href="{% url 'task_update' task.pk %}" class="btn btn-edit">Edit</a>
+            <a href="{% url 'task_delete' task.pk %}" class="btn btn-delete">Delete</a>
+        </div>
+    </div>
+    {% empty %}
+    <div class="form-card" style="text-align: center;">
+        <p>No tasks found. Start by adding one!</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

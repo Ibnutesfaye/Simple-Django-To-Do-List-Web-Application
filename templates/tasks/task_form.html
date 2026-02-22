@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-card">
+    <h2 style="margin-bottom: 2rem; text-align: center;">{{ title }}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="form-group">
+            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+            {{ field }}
+            {% if field.errors %}
+            <div style="color: #ef4444; font-size: 0.8rem; margin-top: 0.25rem;">
+                {{ field.errors|join:", " }}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+            <button type="submit" class="btn btn-primary" style="flex: 1;">Save Task</button>
+            <a href="{% url 'task_list' %}" class="btn btn-edit" style="flex: 1; text-align: center;">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

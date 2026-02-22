@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <!-- CSS/SVG Landscape Background -->
+    <svg class="landscape-svg" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#93c5fd;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <!-- Sky -->
+        <rect width="1440" height="800" fill="url(#skyGradient)" />
+        <!-- Sun/Moon -->
+        <circle cx="720" cy="120" r="100" fill="white" opacity="0.8" />
+        <!-- Mountains -->
+        <path d="M0 800 L0 500 L300 350 L600 550 L900 300 L1200 600 L1440 450 L1440 800 Z" fill="#2563eb"
+            opacity="0.4" />
+        <path d="M0 800 L0 600 L400 450 L800 650 L1100 400 L1440 700 L1440 800 Z" fill="#1d4ed8" opacity="0.6" />
+        <!-- Foreground Mountains/Trees Silhouette -->
+        <path
+            d="M0 800 L0 700 C150 650 300 750 450 700 C600 650 750 750 900 700 C1050 650 1200 750 1440 700 L1440 800 Z"
+            fill="#0f172a" />
+        <!-- Birds -->
+        <path d="M200 220 Q210 210 220 220 M220 220 Q230 210 240 220" stroke="#000" fill="none" stroke-width="2" />
+        <path d="M1100 320 Q1110 310 1120 320 M1120 320 Q1130 310 1140 320" stroke="#000" fill="none"
+            stroke-width="2" />
+        <path d="M1150 300 Q1160 290 1170 300 M1170 300 Q1180 290 1190 300" stroke="#000" fill="none"
+            stroke-width="2" />
+    </svg>
+
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="{% url 'task_list' %}" class="logo">To-Do App</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                {% if user.is_authenticated %}
+                <form action="{% url 'logout' %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="logout-btn"
+                        style="color: white; font-weight: 600; text-transform: uppercase; cursor: pointer; background: transparent; border: none; font-family: inherit;">Logout</button>
+                </form>
+                {% else %}
+                <a href="{% url 'login' %}" class="btn-login-nav">Login</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Django To-Do List App</p>
+        </div>
+    </footer>
+</body>
+
+</html>

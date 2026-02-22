@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #4a90e2;
+    --primary-gradient: linear-gradient(90deg, #64b5f6, #4176cf);
+    --text-light: #ffffff;
+    --text-dark: #1e293b;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-blur: blur(20px);
+    --radius: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-light);
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* CSS Landscape Background */
+    background: linear-gradient(180deg, #dbeafe 0%, #93c5fd 50%, #3b82f6 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Landscape Elements recreated in CSS */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 50% 15%, rgba(255, 255, 255, 0.8) 0%, transparent 15%),
+        /* Sun */
+        linear-gradient(135deg, transparent 75%, rgba(0, 0, 0, 0.05) 100%);
+    z-index: -2;
+}
+
+.landscape-svg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Navbar */
+.navbar {
+    background: transparent;
+    padding: 1.5rem 0;
+    z-index: 100;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navbar-content .logo {
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+.btn-login-nav {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.8rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+/* Main Container */
+main.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Glass Card */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 4rem 3rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.glass-card h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* Forms */
+.form-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-input-wrapper {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 0.6rem 0;
+    color: white;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-eye,
+.icon-mail {
+    position: absolute;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    fill: white;
+    opacity: 0.8;
+}
+
+/* Checkbox & Forgot */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-top: -1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.checkbox-group input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.forgot-link {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.forgot-link strong {
+    font-weight: 700;
+}
+
+/* Submit Button */
+.btn-submit {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Links */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+.form-footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Task List Styles (Adapted for the new theme) */
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.task-grid {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.task-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.task-card.completed {
+    opacity: 0.7;
+}
+
+.task-card.completed .task-title {
+    text-decoration: line-through;
+}
+
+.btn-action {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: 1px solid white;
+    color: white;
+}

@@ -7,6 +7,7 @@ A professional, full-featured To-Do List application built with the Django frame
 ## ✨ Features
 
 ### 🛠 Core Functionality (CRUD)
+
 - **Add Tasks**: Create new daily tasks with titles and descriptions.
 - **View Tasks**: A clean, responsive list view of all your tasks.
 - **Edit Tasks**: Update existing task details at any time.
@@ -14,11 +15,13 @@ A professional, full-featured To-Do List application built with the Django frame
 - **Mark as Completed**: Toggle task status between 'Pending' and 'Completed' with visual strikethrough styling.
 
 ### 🔐 Security & Personalization
+
 - **User Authentication**: Secure Login and Registration system.
 - **Data Privacy**: Users can only see and manage their own tasks.
 - **Django Admin**: Built-in admin panel for site-wide data management.
 
 ### 🎨 Premium UI/UX
+
 - **Glassmorphism**: Elegant frosted-glass cards with backdrop blur.
 - **Minimalist Design**: Underlined inputs with custom SVG icons.
 - **Landscape Background**: Pure CSS/SVG landscape with mountains, trees, and birds.
@@ -29,22 +32,26 @@ A professional, full-featured To-Do List application built with the Django frame
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Python 3.x installed
 - Django installed (`pip install django`)
 
 ### Installation & Setup
 
 1. **Navigate to the project directory**:
+
    ```powershell
    cd "c:\Django To-Do List Web Application"
    ```
 
 2. **Apply Database Migrations**:
+
    ```powershell
    python manage.py migrate
    ```
 
 3. **Start the Development Server**:
+
    ```powershell
    python manage.py runserver
    ```
@@ -75,6 +82,7 @@ I have pre-configured a superuser for testing purposes:
 ---
 
 ## 🛠 Tech Stack
+
 - **Backend**: Django (Python)
 - **Database**: SQLite (built-in)
 - **Frontend**: HTML5, Vanilla CSS3 (Custom styling)
@@ -83,6 +91,7 @@ I have pre-configured a superuser for testing purposes:
 ---
 
 ## 📈 Learning Objectives Demonstrated
+
 - Django project/app scaffolding.
 - MVT Architecture implementation.
 - Handling full CRUD operations in SQLite.

@@ -8,7 +8,7 @@ A professional, full-featured To-Do List application built with the Django frame
 
 ### 🛠 Core Functionality (CRUD)
 
-- **Add Tasks**: Create new daily tasks with titles and descriptions.
+- **Add Tasks**: Create new daily tasks with titles andescriptions.
 - **View Tasks**: A clean, responsive list view of all your tasks.
 - **Edit Tasks**: Update existing task details at any time.
 - **Delete Tasks**: Remove tasks you no longer need.

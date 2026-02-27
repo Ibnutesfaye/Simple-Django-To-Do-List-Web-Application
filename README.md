@@ -23,7 +23,7 @@ A professional, full-featured To-Do List application built with the Django frame
 ### 🎨 Premium UI/UX
 
 - **Glassmorphism**: Elegant frosted-glass cards with backdrop blur.
-- **Minimalist Design**: underlined inputs with custom SVG icons.
+- **Minimalist Design**: Underlined inputs with custom SVG icons.
 - **Landscape Background**: Pure CSS/SVG landscape with mountains, trees, and birds.
 - **Search & Filtering**: Real-time keyword search and status-based filtering (All/Pending/Completed).
 

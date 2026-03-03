@@ -44,7 +44,7 @@ A professional, full-featured To-Do List application built with the Django frame
    cd "c:\Django To-Do List Web Application"
    ```
 
-2. **apply Database migrations**:
+2. **Apply Database migrations**:
 
    ```powershell
    python manage.py migrate

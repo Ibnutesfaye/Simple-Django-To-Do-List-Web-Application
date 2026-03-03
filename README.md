@@ -50,7 +50,7 @@ A professional, full-featured To-Do List application built with the Django frame
    python manage.py migrate
    ```
 
-3. **Start the Development Server**:
+3. **Start the development Server**:
 
    ```powershell
    python manage.py runserver

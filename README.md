@@ -63,7 +63,7 @@ A professional, full-featured To-Do List application built with the Django frame
 
 ## 🔐 Admin Access
 
-I have pre-configured a superuser for testing purposes:
+I have pre-configured a superuser for Testing purposes:
 
 - **Admin URL**: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
 - **Username**: `admin`

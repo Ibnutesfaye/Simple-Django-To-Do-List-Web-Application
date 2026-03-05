@@ -71,7 +71,7 @@ I have pre-configured a superuser for testing purposes:
 
 ---
 
-## 📂 project Structure
+## 📂 Project Structure
 
 - `todoproject/` - Project settings and main URL configuration.
 - `tasks/` - Main application app (Models, Views, Forms, URLs).

@@ -90,7 +90,7 @@ I have pre-configured a superuser for testing purposes:
 
 ---
 
-## 📈 Learning objectives Demonstrated
+## 📈 Learning Objectives Demonstrated
 
 - Django project/app scaffolding.
 - MVT Architecture implementation.

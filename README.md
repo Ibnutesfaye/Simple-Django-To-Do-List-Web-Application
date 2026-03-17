@@ -95,5 +95,5 @@ I have pre-configured a superuser for testing purposes:
 - Django project/app scaffolding.
 - MVT Architecture implementation.
 - Handling full CRUD operations in SQLite.
-- Custom user Authentication and scoping.
+- Custom User Authentication and scoping.
 - Advanced CSS techniques (Glassmorphism, SVG backgrounds).

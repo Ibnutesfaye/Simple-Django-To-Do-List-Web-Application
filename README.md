@@ -84,7 +84,7 @@ I have pre-configured a superuser for testing purposes:
 ## 🛠 Tech Stack
 
 - **Backend**: Django (Python)
-- **Database**: sQLite (built-in)
+- **Database**: SQLite (built-in)
 - **Frontend**: HTML5, Vanilla CSS3 (Custom styling)
 - **Design pattern**: MVT (Model-View-Template)
 

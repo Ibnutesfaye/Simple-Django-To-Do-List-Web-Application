@@ -96,4 +96,4 @@ I have pre-configured a superuser for testing purposes:
 - MVT Architecture implementation.
 - Handling Full CRUD operations in SQLite.
 - Custom User Authentication and scoping.
-- Advanced CSS techniques (glassmorphism, SVG backgrounds).
+- Advanced CSS techniques (Glassmorphism, SVG backgrounds).

@@ -92,7 +92,7 @@ I have pre-configured a superuser for testing purposes:
 
 ## 📈 Learning Objectives Demonstrated
 
-- django project/app scaffolding.
+- Django project/app scaffolding.
 - MVT Architecture implementation.
 - Handling Full CRUD operations in SQLite.
 - Custom User Authentication and scoping.

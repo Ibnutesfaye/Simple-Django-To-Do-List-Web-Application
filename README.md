@@ -81,7 +81,7 @@ I have pre-configured a superuser for testing purposes:
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 tech Stack
 
 - **Backend**: Django (Python)
 - **Database**: SQLite (built-in)

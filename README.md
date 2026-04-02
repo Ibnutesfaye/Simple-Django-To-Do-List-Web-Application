@@ -77,7 +77,7 @@ I have pre-configured a superuser for testing purposes:
 - `tasks/` - Main application app (Models, Views, Forms, URLs).
 - `templates/` - HTML files including the baselLayout and auth templates.
 - `static/` - Custom CSS and premium UI assets.
-- `manage.py` - Django's command-line utility.
+- `manage.py` - Django's Command-line utility.
 
 ---
 

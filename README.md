@@ -74,7 +74,7 @@ I have pre-configured a superuser for testing purposes:
 ## 📂 Project Structure
 
 - `todoproject/` - Project settings and main URL configuration.
-- `tasks/` - Main application app (Models, Views, Forms, URLs).
+- `tasks/` - main application app (Models, Views, Forms, URLs).
 - `templates/` - HTML files including the baselLayout and auth templates.
 - `static/` - Custom CSS and premium UI assets.
 - `manage.py` - Django's command-line utility.

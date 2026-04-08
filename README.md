@@ -73,7 +73,7 @@ I have pre-configured a superuser for testing purposes:
 
 ## 📂 Project Structure
 
-- `todoproject/` - project settings and main URL configuration.
+- `todoproject/` - Project settings and main URL configuration.
 - `tasks/` - Main application app (Models, Views, Forms, URLs).
 - `templates/` - HTML files including the baselLayout and auth templates.
 - `static/` - Custom CSS and premium UI assets.

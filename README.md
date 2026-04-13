@@ -38,7 +38,7 @@ A professional, full-featured To-Do List application built with the Django frame
 
 ### Installation & Setup
 
-1. **Navigate to the Project directory**:
+1. **Navigate to the Project Directory**:
 
    ```powershell
    cd "c:\Django To-Do List Web Application"

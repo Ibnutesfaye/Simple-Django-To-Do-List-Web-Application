@@ -24,7 +24,7 @@ A professional, full-featured To-Do List application built with the Django frame
 
 - **Glassmorphism**: Elegant frosted-glass cards with backdrop blur.
 - **Minimalist Design**: Underlined inputs with Custom SVG icons.
-- **Landscape Background**: Pure CSS/SVG landscape with mountains, trees, and birds.
+- **Landscape Background**: Pure CSS/SVG landscape with Mountains, trees, and birds.
 - **Search & Filtering**: Real-time keyword search and status-based Filtering (All/Pending/Completed).
 
 ---

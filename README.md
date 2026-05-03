@@ -41,7 +41,7 @@ A professional, full-featured To-Do List application built with the Django frame
 1. **Navigate to the Project directory**:
 
    ```powershell
-   cd "c:\Django To-Do List Web application"
+   cd "c:\Django To-Do List Web Application"
    ```
 
 2. **Apply Database migrations**:

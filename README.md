@@ -34,7 +34,7 @@ A professional, full-featured To-Do List application built with the Django frame
 ### Prerequisites
 
 - Python 3.x installed
-- Django installed (`pip install django`)
+- Django Installed (`pip install django`)
 
 ### Installation & Setup
 

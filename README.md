@@ -18,11 +18,11 @@ A professional, full-featured To-Do List application built with the Django frame
 
 - **User Authentication**: Secure Login and Registration system.
 - **Data Privacy**: Users can only see and manage their own tasks.
-- **Django Admin**: Built-in admin panel forsite-wide data management.
+- **Django Admin**: built-in admin panel forsite-wide data management.
 
 ### 🎨 Premium UI/UX
 
-- **Glassmorphism**: Elegant Frosted-glass cards with backdrop blur.
+- **Glassmorphism**: Elegant frosted-glass cards with backdrop blur.
 - **Minimalist Design**: Underlined inputs with Custom SVG icons.
 - **Landscape Background**: Pure CSS/SVG landscape with mountains, trees, and birds.
 - **Search & Filtering**: Real-time keyword search and status-based Filtering (All/Pending/Completed).

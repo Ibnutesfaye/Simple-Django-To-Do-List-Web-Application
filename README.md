@@ -10,7 +10,7 @@ A professional, full-featured To-Do List application built with the Django frame
 
 - **Add Tasks**: Create new daily Tasks with titles and descriptions.
 - **View Tasks**: A clean, responsive list view of all your tasks.
-- **Edit Tasks**: Update existing task details at any time.
+- **Edit Tasks**: update existing task details at any time.
 - **Delete Tasks**: Remove tasks you no longer need.
 - **Mark as Completed**: toggle task status between 'Pending' and 'Completed' with visual strikethrough styling.
 

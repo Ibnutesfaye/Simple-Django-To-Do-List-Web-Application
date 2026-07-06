@@ -16,7 +16,7 @@ A professional, full-featured To-Do List application built with the Django frame
 
 ### 🔐 Security & Personalization
 
-- **User authentication**: Secure Login and Registration system.
+- **User Authentication**: Secure Login and Registration system.
 - **Data Privacy**: Users can only see and Manage their own tasks.
 - **Django Admin**: Built-in admin panel Forsite-wide data Management.
 

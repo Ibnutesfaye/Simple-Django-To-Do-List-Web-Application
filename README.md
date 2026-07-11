@@ -14,7 +14,7 @@ A professional, full-featured To-Do List application built with the Django frame
 - **Delete Tasks**: Remove tasks you no longer need.
 - **Mark as Completed**: toggle task status between 'Pending' and 'Completed' with visual strikethrough styling.
 
-### 🔐 Security & Personalizatio
+### 🔐 Security & Personalization
 
 - **User Authentication**: Secure Login and Registration system.
 - **Data Privacy**: Users can only see and Manage their own tasks.

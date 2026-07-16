@@ -4,7 +4,7 @@ A professional, full-featured To-Do List application built with the Django frame
 
 ---
 
-## ✨ Feature
+## ✨ Features
 
 ### 🛠 Core Functionality (CRUD)
 

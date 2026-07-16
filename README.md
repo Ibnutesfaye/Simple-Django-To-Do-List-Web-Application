@@ -1,4 +1,4 @@
-# 🎯 Django To-Do List Web pplication
+# 🎯 Django To-Do List Web Application
 
 A professional, full-featured To-Do List application built with the Django framework. This project features a modern **Glassmorphism UI** with a custom CSS landscape background, full CRUD functionality, and user authentication.
 
